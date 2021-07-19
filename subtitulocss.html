@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subtitulos CSS</title>
+	<meta name="description" content="Subtitulos en CSS" />
+	<meta name="keywords" content="Subtitulos en CSS animados"/>
+	<meta name="author" content="Israel Prieto"/>
+	<meta name="copyright" content="CC BY 4.0">
+	<meta name="email" content="prieto76@gmail.com">
+	<meta charset="utf-8">
+
+<style>
+.c-sub 			{width:400px; height:25px; background-color:rgba(0,0,0,0.6); margin:auto; overflow:hidden; position:relative; top:-35px; z-index:2;}
+.c-sub .t-sub	{animation:subtitulo 20s linear infinite; text-align:center; font-family:arial; font-size:15px; color:white; line-height:25px;}
+.i-pantalla		{position:relative; margin:auto; display:inline-block; text-align:center; height:200px; width:400px; background-image: url(hope.png); animation: deslizar 20s linear infinite alternate; z-index:1;}
+
+@keyframes deslizar 	{from {background-position:top; background-size:200%;} to {background-position:bottom; background-size:100%;}}
+@keyframes subtitulo
+{
+	0%{ margin-top: 0;}
+	10.9%{ margin-top: 0;}
+	
+	11% {margin-top: -25px;}
+	21.9% {margin-top: -25px;}
+	
+	22% {margin-top: -50px;}
+	32.9% {margin-top: -50px;}
+	
+	33% {margin-top: -75px;}
+	43.9% {margin-top: -75px;}
+	
+	44% {margin-top: -100px;}
+	54.9% {margin-top: -100px;}
+
+	55% {margin-top: -125px;}
+	65.9% {margin-top: -125px;}
+
+	66% {margin-top: -150px;}
+	76.9%{margin-top: -150px;}
+	
+	77% {margin-top: -175px;}
+	87.9% {margin-top: -175px;}
+	
+	88% {margin-top: -200px;}
+	99.9% {margin-top: -200px;}
+	
+	100% {margin-top: 0;}
+}
+</style>
+</head>
+<body>
+<center>
+<div class="i-pantalla"></div>
+	<div class="c-sub">
+		<div class="t-sub">
+					<div>Episodio IV</div>
+					<div>Una nueva esperanza</div>
+					<div>Es un período de guerra civil,</div>
+					<div>cruceros rebeldes atacan</div>
+					<div>desde una base oculta,</div>
+					<div>han obtenido una victoria</div>
+					<div>contra el malvado imperio.</div>
+					<div>Frontend by:</div>
+					<div>Israel Prieto</div>
+		</div>
+	</div>
+</center>
+<br>
+
+</body>
+</html>
